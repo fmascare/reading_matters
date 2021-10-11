@@ -15,8 +15,10 @@ app.set('views', __dirname + '/views')
 //Routing Info
 const indexRouter = require('./routes/index')
 const authorRouter = require('./routes/author')
+const bookRouter = require('./routes/books')
 app.use('/', indexRouter)
 app.use('/authors',authorRouter)
+app.use('/books', bookRouter)
 
 //Database Info
 mongoose.connect(process.env.DATABASE_URL)

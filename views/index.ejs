@@ -10,5 +10,11 @@
     <%- include('./partials/header') %>
     <p>Welcome to Reading. Matters.</p> 
     <p>We hope you'll join our growing community where readers find and share their favorite reads!</p>
+    <h2>Recently Added Books</h2>
+    <div>
+        <% books.forEach(book => { %>
+            <img heigh="150" width="100" src="<%= book.coverImagePath %>">
+        <% }) %>
+    </div>
 </body>
 </html>

@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading. Matters.</title>
-</head>
-<body>
-    <%- include('./partials/header') %>
-    <p>Welcome to Reading. Matters.</p> 
-    <p>We hope you'll join our growing community where readers find and share their favorite reads!</p>
-    <h2>Recently Added Books</h2>
-    <div>
-        <% books.forEach(book => { %>
-            <img heigh="150" width="100" src="<%= book.coverImagePath %>">
-        <% }) %>
-    </div>
-</body>
-</html>
+<%- include('./partials/header.ejs') %>
+<p>Welcome to Reading. Matters.</p> 
+<p>We hope you'll join our growing community where readers find and share their favorite reads!</p>
+<h2>Recently Added Books</h2>
+<div>
+    <% books.forEach(book => { %>
+        <img heigh="150" width="100" src="<%= book.coverImagePath %>">
+    <% }) %>
+</div>
